@@ -32,5 +32,5 @@ resource "azuread_application_federated_identity_credential" "github_fic" {
   description    = "Allows GitHub Actions on main branch to authenticate"
   audiences      = ["api://AzureADTokenExchange"]
   issuer         = "https://token.actions.githubusercontent.com"
-  subject        = "repo:ngalfab/terraform_oidc:environment:prod"
+  subject        = "repo:ngalfab@270556585/terraform_oidc@1334479578:ref:refs/heads/main"
 }
